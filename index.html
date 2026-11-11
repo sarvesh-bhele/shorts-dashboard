@@ -434,39 +434,78 @@
             border-radius: 4px;
         }
 
-        .video-title {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 1.35;
+        /* Structured Content Fields */
+        .field-box {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-dim);
+            border-radius: var(--radius-md);
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            transition: border-color 0.15s ease;
         }
 
-        .video-title a {
+        .field-box:hover {
+            border-color: var(--border-bright);
+        }
+
+        .field-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .field-label {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .field-content-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #FFFFFF;
+        }
+
+        .field-content-title a {
             color: #FFFFFF;
             text-decoration: none;
             transition: color 0.15s ease;
         }
 
-        .video-title a:hover {
+        .field-content-title a:hover {
             color: var(--accent-blue);
         }
 
-        .desc-box {
-            background: var(--bg-elevated);
-            border: 1px solid var(--border-dim);
-            border-radius: var(--radius-sm);
-            padding: 10px 12px;
-            font-size: 12px;
+        .field-content-desc {
+            font-size: 13px;
             color: var(--text-secondary);
-            line-height: 1.45;
+            line-height: 1.55;
+            white-space: pre-wrap;
+            max-height: 220px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            word-break: break-word;
         }
 
-        .tags-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: auto;
+        .field-content-desc::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .field-content-desc::-webkit-scrollbar-thumb {
+            background: var(--border-bright);
+            border-radius: 4px;
         }
 
         .tags-list {
@@ -480,26 +519,32 @@
             border: 1px solid var(--border-dim);
             color: #7DD3FC;
             font-size: 11px;
-            padding: 2px 8px;
+            padding: 3px 8px;
             border-radius: 4px;
         }
 
         .btn-copy-sm {
-            background: var(--bg-elevated);
-            border: 1px solid var(--border-dim);
-            color: var(--text-secondary);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-bright);
+            color: #A5D6FF;
             font-size: 11px;
-            font-weight: 600;
+            font-weight: 700;
             padding: 4px 10px;
-            border-radius: var(--radius-sm);
+            border-radius: 6px;
             cursor: pointer;
             transition: all 0.15s ease;
             font-family: inherit;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
         }
 
         .btn-copy-sm:hover {
-            background: var(--border-dim);
+            background: #1E293B;
             color: #FFFFFF;
+            border-color: var(--accent-blue);
+            transform: translateY(-1px);
         }
 
         /* Toast feedback */
@@ -566,7 +611,7 @@
                         <h1>Autonomous Shorts Studio</h1>
                         <div class="brand-sub">
                             <span class="live-dot"></span>
-                            <span>Live Cloud Sync &bull; 11 Nov 2026, 04:08 PM IST</span>
+                            <span>Live Cloud Sync &bull; 11 Nov 2026, 04:16 PM IST</span>
                         </div>
                     </div>
                 </div>
@@ -615,7 +660,7 @@
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="why the rich keep getting richer (the $1,000 test) 💰 #shorts #trending #trendingshorts #rich #yutube">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/6NU3qVzEsYE/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLD6XGtW1pp7qeYkZvKvyq_il9S-jQ" alt="Why The Rich Keep Getting Richer (The $1,000 Test) 💰 #Shorts #trending #trendingshorts #rich #yutube" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/6NU3qVzEsYE/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/6NU3qVzEsYE/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLAPbo8L1W7lbFUk9k8_n5qu77_WAw" alt="Why The Rich Keep Getting Richer (The $1,000 Test) 💰 #Shorts #trending #trendingshorts #rich #yutube" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/6NU3qVzEsYE/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -623,7 +668,7 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/6NU3qVzEsYE/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLD6XGtW1pp7qeYkZvKvyq_il9S-jQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/6NU3qVzEsYE/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLAPbo8L1W7lbFUk9k8_n5qu77_WAw" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -634,18 +679,44 @@
                     <span class="vid-id">ID: <code>6NU3qVzEsYE</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/6NU3qVzEsYE" target="_blank" rel="noopener noreferrer">Why The Rich Keep Getting Richer (The $1,000 Test) 💰 #Shorts #trending #trendingshorts #rich #yutube</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">Give two people $1,000 today. One buys flashy gadgets, designer shoes, and depreciating toys that drain cash every single month. The other buys index funds, rental real estate, and automated assets that pay them while th...</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-6NU3qVzEsYE', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/6NU3qVzEsYE" target="_blank" rel="noopener noreferrer">Why The Rich Keep Getting Richer (The $1,000 Test) 💰 #Shorts #trending #trendingshorts #rich #yutube</a>
+                    </div>
+                    <textarea id="title-6NU3qVzEsYE" style="display:none;">Why The Rich Keep Getting Richer (The $1,000 Test) 💰 #Shorts #trending #trendingshorts #rich #yutube</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-6NU3qVzEsYE', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">Give two people $1,000 today. One buys flashy gadgets, designer shoes, and depreciating toys that drain cash every single month. The other buys index funds, rental real estate, and automated assets that pay them while they sleep.
+
+Years later, one is trapped paying off endless debt, while the other bought back their entire life.
+
+The poor trade their time for money. The rich make money buy back their freedom. 📈✨</div>
+                    <textarea id="desc-6NU3qVzEsYE" style="display:none;">Give two people $1,000 today. One buys flashy gadgets, designer shoes, and depreciating toys that drain cash every single month. The other buys index funds, rental real estate, and automated assets that pay them while they sleep.
+
+Years later, one is trapped paying off endless debt, while the other bought back their entire life.
+
+The poor trade their time for money. The rich make money buy back their freedom. 📈✨</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (8)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-6NU3qVzEsYE', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#FinancialFreedom</span><span class="tag-pill">#MoneyMindset</span><span class="tag-pill">#RichVsPoor</span><span class="tag-pill">#Investing</span><span class="tag-pill">#AssetsVsLiabilities</span><span class="tag-pill">#TallTale3D</span><span class="tag-pill">#Animation</span><span class="tag-pill">#Entrepreneur</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-6NU3qVzEsYE', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-6NU3qVzEsYE" value="FinancialFreedom, MoneyMindset, RichVsPoor, Investing, AssetsVsLiabilities, TallTale3D, Animation, Entrepreneur">
+                    <textarea id="tags-6NU3qVzEsYE" style="display:none;">FinancialFreedom, MoneyMindset, RichVsPoor, Investing, AssetsVsLiabilities, TallTale3D, Animation, Entrepreneur</textarea>
                 </div>
             </div>
         </article>
@@ -653,7 +724,7 @@
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the $1 bank purchase #shorts #billionairesecrets #businessfacts">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/BPaynpOe4eg/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLCicNIkkIlldAVBC5w0xVqEF7EACw" alt="The $1 Bank Purchase #Shorts #BillionaireSecrets #BusinessFacts" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/BPaynpOe4eg/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/BPaynpOe4eg/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLDHdsKV66j7zc3q7UCR1AdkSO7R9g" alt="The $1 Bank Purchase #Shorts #BillionaireSecrets #BusinessFacts" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/BPaynpOe4eg/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -661,7 +732,7 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/BPaynpOe4eg/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLCicNIkkIlldAVBC5w0xVqEF7EACw" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/BPaynpOe4eg/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLDHdsKV66j7zc3q7UCR1AdkSO7R9g" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -672,20 +743,50 @@
                     <span class="vid-id">ID: <code>BPaynpOe4eg</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/BPaynpOe4eg" target="_blank" rel="noopener noreferrer">The $1 Bank Purchase #Shorts #BillionaireSecrets #BusinessFacts</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">This man bought an entire bank for just $1! 🏦💰
-
-In 1995, Barings Bank—the 233-year-old bank of the British Royal Family—collapsed overnight due to rogue trader unauthorized bets. While everyone fled the mountain of toxic...</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-BPaynpOe4eg', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/BPaynpOe4eg" target="_blank" rel="noopener noreferrer">The $1 Bank Purchase #Shorts #BillionaireSecrets #BusinessFacts</a>
+                    </div>
+                    <textarea id="title-BPaynpOe4eg" style="display:none;">The $1 Bank Purchase #Shorts #BillionaireSecrets #BusinessFacts</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-BPaynpOe4eg', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">This man bought an entire bank for just $1! 🏦💰
+
+In 1995, Barings Bank—the 233-year-old bank of the British Royal Family—collapsed overnight due to rogue trader unauthorized bets. While everyone fled the mountain of toxic debt, Dutch banking giant ING stepped in and bought the entire institution for literally £1. Today, that purchase is worth billions!
+
+In business, the greatest fortunes are made in times of crisis! 💡
+Subscribe for more unbelievable true stories and historical facts! 🔔
+
+#Shorts #BillionaireSecrets #BusinessFacts #BaringsBank #Investing #Wealth #TrueStory #ViralShorts #MoneyMindset</div>
+                    <textarea id="desc-BPaynpOe4eg" style="display:none;">This man bought an entire bank for just $1! 🏦💰
+
+In 1995, Barings Bank—the 233-year-old bank of the British Royal Family—collapsed overnight due to rogue trader unauthorized bets. While everyone fled the mountain of toxic debt, Dutch banking giant ING stepped in and bought the entire institution for literally £1. Today, that purchase is worth billions!
+
+In business, the greatest fortunes are made in times of crisis! 💡
+Subscribe for more unbelievable true stories and historical facts! 🔔
+
+#Shorts #BillionaireSecrets #BusinessFacts #BaringsBank #Investing #Wealth #TrueStory #ViralShorts #MoneyMindset</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (15)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-BPaynpOe4eg', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#shorts</span><span class="tag-pill">#the 1 dollar bank</span><span class="tag-pill">#barings bank collapse</span><span class="tag-pill">#ing bank</span><span class="tag-pill">#billionaire secrets</span><span class="tag-pill">#business facts</span><span class="tag-pill">#business story</span><span class="tag-pill">#tall tale 3d</span><span class="tag-pill">#investing story</span><span class="tag-pill">#banking secrets</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-BPaynpOe4eg', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-BPaynpOe4eg" value="shorts, the 1 dollar bank, barings bank collapse, ing bank, billionaire secrets, business facts, business story, tall tale 3d, investing story, banking secrets, money secrets, crazy true story, financial history, viral shorts, wealth building">
+                    <textarea id="tags-BPaynpOe4eg" style="display:none;">shorts, the 1 dollar bank, barings bank collapse, ing bank, billionaire secrets, business facts, business story, tall tale 3d, investing story, banking secrets, money secrets, crazy true story, financial history, viral shorts, wealth building</textarea>
                 </div>
             </div>
         </article>
@@ -693,7 +794,7 @@ In 1995, Barings Bank—the 233-year-old bank of the British Royal Family—coll
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the million dollar pixel page #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLDuJ7GfMzYO-3f7rw5PvBTtlvthzg" alt="The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/FaMv9q-lnhI/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLDYeRfxpChD1h0sKXLOzaorf1qmGg" alt="The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/FaMv9q-lnhI/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -701,7 +802,7 @@ In 1995, Barings Bank—the 233-year-old bank of the British Royal Family—coll
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLDuJ7GfMzYO-3f7rw5PvBTtlvthzg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLDYeRfxpChD1h0sKXLOzaorf1qmGg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -712,20 +813,50 @@ In 1995, Barings Bank—the 233-year-old bank of the British Royal Family—coll
                     <span class="vid-id">ID: <code>FaMv9q-lnhI</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/FaMv9q-lnhI" target="_blank" rel="noopener noreferrer">The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">A broke student sold tiny dots on a blank website... and made ONE MILLION DOLLARS! 🤯💰
-
-In 2005, 21-year-old Alex Tew needed university tuition. With zero capital, he created a 1000x1000 pixel web page selling each pixel ...</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-FaMv9q-lnhI', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/FaMv9q-lnhI" target="_blank" rel="noopener noreferrer">The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset</a>
+                    </div>
+                    <textarea id="title-FaMv9q-lnhI" style="display:none;">The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-FaMv9q-lnhI', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">A broke student sold tiny dots on a blank website... and made ONE MILLION DOLLARS! 🤯💰
+
+In 2005, 21-year-old Alex Tew needed university tuition. With zero capital, he created a 1000x1000 pixel web page selling each pixel for $1. It went massively viral across the globe, selling out completely in 138 days! Proof that the simplest ideas are often the most profitable.
+
+Drop a comment below with your thoughts! 👇
+Subscribe for daily viral business stories and life-changing facts! 🔔
+
+#Shorts #BusinessStory #MillionaireMindset #AlexTew #TrueStory #ViralShorts</div>
+                    <textarea id="desc-FaMv9q-lnhI" style="display:none;">A broke student sold tiny dots on a blank website... and made ONE MILLION DOLLARS! 🤯💰
+
+In 2005, 21-year-old Alex Tew needed university tuition. With zero capital, he created a 1000x1000 pixel web page selling each pixel for $1. It went massively viral across the globe, selling out completely in 138 days! Proof that the simplest ideas are often the most profitable.
+
+Drop a comment below with your thoughts! 👇
+Subscribe for daily viral business stories and life-changing facts! 🔔
+
+#Shorts #BusinessStory #MillionaireMindset #AlexTew #TrueStory #ViralShorts</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (25)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-FaMv9q-lnhI', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#shorts</span><span class="tag-pill">#youtube shorts</span><span class="tag-pill">#viral shorts</span><span class="tag-pill">#trending shorts</span><span class="tag-pill">#the million dollar pixel page</span><span class="tag-pill">#the million dollar homepage</span><span class="tag-pill">#million dollar homepage</span><span class="tag-pill">#alex tew</span><span class="tag-pill">#million dollar pixel page</span><span class="tag-pill">#how to make a million dollars</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-FaMv9q-lnhI', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-FaMv9q-lnhI" value="shorts, youtube shorts, viral shorts, trending shorts, the million dollar pixel page, the million dollar homepage, million dollar homepage, alex tew, million dollar pixel page, how to make a million dollars, accidental millionaire, creative business ideas, viral website, dot com boom, online business story, young millionaire, viral marketing, internet history, business story, entrepreneurship, millionaire mindset, true story, success story, business facts, investing">
+                    <textarea id="tags-FaMv9q-lnhI" style="display:none;">shorts, youtube shorts, viral shorts, trending shorts, the million dollar pixel page, the million dollar homepage, million dollar homepage, alex tew, million dollar pixel page, how to make a million dollars, accidental millionaire, creative business ideas, viral website, dot com boom, online business story, young millionaire, viral marketing, internet history, business story, entrepreneurship, millionaire mindset, true story, success story, business facts, investing</textarea>
                 </div>
             </div>
         </article>
@@ -733,7 +864,7 @@ In 2005, 21-year-old Alex Tew needed university tuition. With zero capital, he c
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the man who sold the eiffel tower #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLCq8hWFNjRO_mG0eRL8i7mo8l3-Cg" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLBEwdCje9mu3V5sKKAnEI0nWrRH8g" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -741,7 +872,7 @@ In 2005, 21-year-old Alex Tew needed university tuition. With zero capital, he c
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLCq8hWFNjRO_mG0eRL8i7mo8l3-Cg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLBEwdCje9mu3V5sKKAnEI0nWrRH8g" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -752,20 +883,52 @@ In 2005, 21-year-old Alex Tew needed university tuition. With zero capital, he c
                     <span class="vid-id">ID: <code>_QsVgp0FNOA</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/_QsVgp0FNOA" target="_blank" rel="noopener noreferrer">The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">This con artist sold the Eiffel Tower for scrap metal... TWICE! 🤯
-
-In 1925, Victor Lustig read that Paris was struggling to maintain the rusting Eiffel Tower. Posing as a government official, he forged documents and sold...</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-_QsVgp0FNOA', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/_QsVgp0FNOA" target="_blank" rel="noopener noreferrer">The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset</a>
+                    </div>
+                    <textarea id="title-_QsVgp0FNOA" style="display:none;">The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-_QsVgp0FNOA', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">This con artist sold the Eiffel Tower for scrap metal... TWICE! 🤯
+
+In 1925, Victor Lustig read that Paris was struggling to maintain the rusting Eiffel Tower. Posing as a government official, he forged documents and sold all 7,000 tons of scrap metal to a gullible dealer, pocketing a fortune and escaping to Vienna.
+
+Drop a comment below with your thoughts! 👇
+Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable facts! 🔔
+
+#Shorts #BusinessStory #MillionaireMindset #SuccessStory #Entrepreneur
+#Viral #Trending #DidYouKnow #Storytime #Knowledge</div>
+                    <textarea id="desc-_QsVgp0FNOA" style="display:none;">This con artist sold the Eiffel Tower for scrap metal... TWICE! 🤯
+
+In 1925, Victor Lustig read that Paris was struggling to maintain the rusting Eiffel Tower. Posing as a government official, he forged documents and sold all 7,000 tons of scrap metal to a gullible dealer, pocketing a fortune and escaping to Vienna.
+
+Drop a comment below with your thoughts! 👇
+Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable facts! 🔔
+
+#Shorts #BusinessStory #MillionaireMindset #SuccessStory #Entrepreneur
+#Viral #Trending #DidYouKnow #Storytime #Knowledge</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (27)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-_QsVgp0FNOA', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#business documentary</span><span class="tag-pill">#business facts</span><span class="tag-pill">#business growth</span><span class="tag-pill">#business ideas</span><span class="tag-pill">#business story</span><span class="tag-pill">#case study</span><span class="tag-pill">#did you know</span><span class="tag-pill">#entrepreneurship</span><span class="tag-pill">#how they did it</span><span class="tag-pill">#inspiring business</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-_QsVgp0FNOA', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-_QsVgp0FNOA" value="business documentary, business facts, business growth, business ideas, business story, case study, did you know, entrepreneurship, how they did it, inspiring business, investing, millionaire mindset, mind blowing, modern business, shorts, startup motivation, storytime, success story, tall tale 3d, the man who sold the eiffel tower, trending shorts, true story, unbelievable facts, viral business, viral shorts, wealth building, youtube shorts">
+                    <textarea id="tags-_QsVgp0FNOA" style="display:none;">business documentary, business facts, business growth, business ideas, business story, case study, did you know, entrepreneurship, how they did it, inspiring business, investing, millionaire mindset, mind blowing, modern business, shorts, startup motivation, storytime, success story, tall tale 3d, the man who sold the eiffel tower, trending shorts, true story, unbelievable facts, viral business, viral shorts, wealth building, youtube shorts</textarea>
                 </div>
             </div>
         </article>
@@ -773,7 +936,7 @@ In 1925, Victor Lustig read that Paris was struggling to maintain the rusting Ei
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the mystery of the green children #shorts #darkmystery #unexplained">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLAvG1WroWaYgzWhr_QDTjD48WUL-Q" alt="The Mystery of the Green Children #Shorts #DarkMystery #Unexplained" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLAY-2tVrsiQdPDa0aIA7H6BWtwbRw" alt="The Mystery of the Green Children #Shorts #DarkMystery #Unexplained" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -781,7 +944,7 @@ In 1925, Victor Lustig read that Paris was struggling to maintain the rusting Ei
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CNSJ0dcG&rs=AOn4CLAvG1WroWaYgzWhr_QDTjD48WUL-Q" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CKyO0dcG&rs=AOn4CLAY-2tVrsiQdPDa0aIA7H6BWtwbRw" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -792,20 +955,52 @@ In 1925, Victor Lustig read that Paris was struggling to maintain the rusting Ei
                     <span class="vid-id">ID: <code>H8vrUx2nyUc</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/H8vrUx2nyUc" target="_blank" rel="noopener noreferrer">The Mystery of the Green Children #Shorts #DarkMystery #Unexplained</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">In 1150, two children with bright green skin walked out of a mysterious cave! 🤯
-
-In the village of Woolpit, England, villagers discovered a brother and sister speaking an unknown language, wearing strange clothes, and po...</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-H8vrUx2nyUc', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/H8vrUx2nyUc" target="_blank" rel="noopener noreferrer">The Mystery of the Green Children #Shorts #DarkMystery #Unexplained</a>
+                    </div>
+                    <textarea id="title-H8vrUx2nyUc" style="display:none;">The Mystery of the Green Children #Shorts #DarkMystery #Unexplained</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-H8vrUx2nyUc', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">In 1150, two children with bright green skin walked out of a mysterious cave! 🤯
+
+In the village of Woolpit, England, villagers discovered a brother and sister speaking an unknown language, wearing strange clothes, and possessing luminous green skin. They claimed to come from a subterranean twilight land called St. Martin's Land.
+
+Drop a comment below with your thoughts! 👇
+Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable facts! 🔔
+
+#Shorts #DarkMystery #Unexplained #TrueCrime #CreepyFacts
+#Viral #Trending #DidYouKnow #Storytime #Knowledge</div>
+                    <textarea id="desc-H8vrUx2nyUc" style="display:none;">In 1150, two children with bright green skin walked out of a mysterious cave! 🤯
+
+In the village of Woolpit, England, villagers discovered a brother and sister speaking an unknown language, wearing strange clothes, and possessing luminous green skin. They claimed to come from a subterranean twilight land called St. Martin's Land.
+
+Drop a comment below with your thoughts! 👇
+Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable facts! 🔔
+
+#Shorts #DarkMystery #Unexplained #TrueCrime #CreepyFacts
+#Viral #Trending #DidYouKnow #Storytime #Knowledge</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (27)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-H8vrUx2nyUc', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#3d animation</span><span class="tag-pill">#animated short</span><span class="tag-pill">#creepy facts</span><span class="tag-pill">#creepy stories</span><span class="tag-pill">#daily shorts</span><span class="tag-pill">#dark mysteries</span><span class="tag-pill">#did you know</span><span class="tag-pill">#inspiring video</span><span class="tag-pill">#mind blowing</span><span class="tag-pill">#mysterious events</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-H8vrUx2nyUc', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-H8vrUx2nyUc" value="3d animation, animated short, creepy facts, creepy stories, daily shorts, dark mysteries, did you know, inspiring video, mind blowing, mysterious events, night file 3d, real life mystery, scary facts, short film, shorts, storytime, strange phenomena, the mystery of the green children, trending shorts, true crime story, unbelievable facts, unexplained incidents, unsolved mysteries, viral shorts, viral story, youtube shorts, yt shorts">
+                    <textarea id="tags-H8vrUx2nyUc" style="display:none;">3d animation, animated short, creepy facts, creepy stories, daily shorts, dark mysteries, did you know, inspiring video, mind blowing, mysterious events, night file 3d, real life mystery, scary facts, short film, shorts, storytime, strange phenomena, the mystery of the green children, trending shorts, true crime story, unbelievable facts, unexplained incidents, unsolved mysteries, viral shorts, viral story, youtube shorts, yt shorts</textarea>
                 </div>
             </div>
         </article>
@@ -832,18 +1027,40 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>6URJkooqxfI</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/6URJkooqxfI" target="_blank" rel="noopener noreferrer">He Traded Half His Business for a Used Car. Then THIS Happened!🍕#shorts #money #pizza #millionviews</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">In 1960, Tom Monaghan was a broke delivery boy in Michigan. His brother traded his entire 50% share of their tiny pizza shop for a beat-up 1959 VW Beetle, leaving Tom all alone with soggy pizzas and collapsing cardboard ...</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-6URJkooqxfI', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/6URJkooqxfI" target="_blank" rel="noopener noreferrer">He Traded Half His Business for a Used Car. Then THIS Happened!🍕#shorts #money #pizza #millionviews</a>
+                    </div>
+                    <textarea id="title-6URJkooqxfI" style="display:none;">He Traded Half His Business for a Used Car. Then THIS Happened!🍕#shorts #money #pizza #millionviews</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-6URJkooqxfI', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">In 1960, Tom Monaghan was a broke delivery boy in Michigan. His brother traded his entire 50% share of their tiny pizza shop for a beat-up 1959 VW Beetle, leaving Tom all alone with soggy pizzas and collapsing cardboard boxes.
+
+Instead of quitting, Tom had a crazy idea: he engineered the world’s first rigid corrugated pizza box and promised hot delivery in 30 minutes flat. College dorms exploded with orders, that little store became Domino's Pizza, and the penniless delivery boy became a billionaire! 🚀🍕</div>
+                    <textarea id="desc-6URJkooqxfI" style="display:none;">In 1960, Tom Monaghan was a broke delivery boy in Michigan. His brother traded his entire 50% share of their tiny pizza shop for a beat-up 1959 VW Beetle, leaving Tom all alone with soggy pizzas and collapsing cardboard boxes.
+
+Instead of quitting, Tom had a crazy idea: he engineered the world’s first rigid corrugated pizza box and promised hot delivery in 30 minutes flat. College dorms exploded with orders, that little store became Domino's Pizza, and the penniless delivery boy became a billionaire! 🚀🍕</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (8)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-6URJkooqxfI', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#Entrepreneurship</span><span class="tag-pill">#SuccessStory</span><span class="tag-pill">#BusinessStory</span><span class="tag-pill">#TallTale3D</span><span class="tag-pill">#Animation</span><span class="tag-pill">#Inspiration</span><span class="tag-pill">#MillionaireMindset</span><span class="tag-pill">#DominosPizza</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-6URJkooqxfI', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-6URJkooqxfI" value="Entrepreneurship, SuccessStory, BusinessStory, TallTale3D, Animation, Inspiration, MillionaireMindset, DominosPizza">
+                    <textarea id="tags-6URJkooqxfI" style="display:none;">Entrepreneurship, SuccessStory, BusinessStory, TallTale3D, Animation, Inspiration, MillionaireMindset, DominosPizza</textarea>
                 </div>
             </div>
         </article>
@@ -870,18 +1087,36 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>Hb4WUR7rR6w</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/Hb4WUR7rR6w" target="_blank" rel="noopener noreferrer">The $2 Mistake That Built a $100M Empire 💸</a>
-                </h2>
-
-                <div class="desc-box">
-                    <div class="desc-text">In 1928, an accountant spilled a $2 bottle of pink dye into a failed rubber batch on his lunch break—and accidentally invented bubble gum! That's why nearly all bubble gum on earth is still pink today....</div>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-Hb4WUR7rR6w', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/Hb4WUR7rR6w" target="_blank" rel="noopener noreferrer">The $2 Mistake That Built a $100M Empire 💸</a>
+                    </div>
+                    <textarea id="title-Hb4WUR7rR6w" style="display:none;">The $2 Mistake That Built a $100M Empire 💸</textarea>
                 </div>
 
-                <div class="tags-wrapper">
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-Hb4WUR7rR6w', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">In 1928, an accountant spilled a $2 bottle of pink dye into a failed rubber batch on his lunch break—and accidentally invented bubble gum! That's why nearly all bubble gum on earth is still pink today.</div>
+                    <textarea id="desc-Hb4WUR7rR6w" style="display:none;">In 1928, an accountant spilled a $2 bottle of pink dye into a failed rubber batch on his lunch break—and accidentally invented bubble gum! That's why nearly all bubble gum on earth is still pink today.</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (7)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-Hb4WUR7rR6w', this)">📋 Copy Tags</button>
+                    </div>
                     <div class="tags-list"><span class="tag-pill">#shorts</span><span class="tag-pill">#BusinessLore</span><span class="tag-pill">#DubbleBubble</span><span class="tag-pill">#AccidentalInventions</span><span class="tag-pill">#HistoryFacts</span><span class="tag-pill">#TrueStories</span><span class="tag-pill">#Animation</span></div>
-                    <button class="btn-copy-sm" onclick="copyText('tags-Hb4WUR7rR6w', this)">📋 Copy Tags</button>
-                    <input type="hidden" id="tags-Hb4WUR7rR6w" value="shorts, BusinessLore, DubbleBubble, AccidentalInventions, HistoryFacts, TrueStories, Animation">
+                    <textarea id="tags-Hb4WUR7rR6w" style="display:none;">shorts, BusinessLore, DubbleBubble, AccidentalInventions, HistoryFacts, TrueStories, Animation</textarea>
                 </div>
             </div>
         </article>
@@ -908,12 +1143,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>a_YfB7eF-nI</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/a_YfB7eF-nI" target="_blank" rel="noopener noreferrer">Humne wahie lagaya dil jaha dil lagana mana tha💕🌻#song #romantic #songs #quotes #funny #fun #comedy</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-a_YfB7eF-nI', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/a_YfB7eF-nI" target="_blank" rel="noopener noreferrer">Humne wahie lagaya dil jaha dil lagana mana tha💕🌻#song #romantic #songs #quotes #funny #fun #comedy</a>
+                    </div>
+                    <textarea id="title-a_YfB7eF-nI" style="display:none;">Humne wahie lagaya dil jaha dil lagana mana tha💕🌻#song #romantic #songs #quotes #funny #fun #comedy</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -940,12 +1185,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>SnFzlCiLFnk</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/SnFzlCiLFnk" target="_blank" rel="noopener noreferrer">keep smiling 😊 #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-SnFzlCiLFnk', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/SnFzlCiLFnk" target="_blank" rel="noopener noreferrer">keep smiling 😊 #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym</a>
+                    </div>
+                    <textarea id="title-SnFzlCiLFnk" style="display:none;">keep smiling 😊 #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -972,12 +1227,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>yynszoBQCCM</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/yynszoBQCCM" target="_blank" rel="noopener noreferrer">💻🔥 #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym #corporate</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-yynszoBQCCM', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/yynszoBQCCM" target="_blank" rel="noopener noreferrer">💻🔥 #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym #corporate</a>
+                    </div>
+                    <textarea id="title-yynszoBQCCM" style="display:none;">💻🔥 #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym #corporate</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1004,12 +1269,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>0gjRYA79FdE</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/0gjRYA79FdE" target="_blank" rel="noopener noreferrer">🔥🧨 #explore #travel #viral #trending #shortvideo #shorts #shortsfeed #love #bailgadasharyat #pune</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-0gjRYA79FdE', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/0gjRYA79FdE" target="_blank" rel="noopener noreferrer">🔥🧨 #explore #travel #viral #trending #shortvideo #shorts #shortsfeed #love #bailgadasharyat #pune</a>
+                    </div>
+                    <textarea id="title-0gjRYA79FdE" style="display:none;">🔥🧨 #explore #travel #viral #trending #shortvideo #shorts #shortsfeed #love #bailgadasharyat #pune</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1036,12 +1311,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>pc2fvDG5s6U</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/pc2fvDG5s6U" target="_blank" rel="noopener noreferrer">maan dhavataya #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-pc2fvDG5s6U', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/pc2fvDG5s6U" target="_blank" rel="noopener noreferrer">maan dhavataya #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym</a>
+                    </div>
+                    <textarea id="title-pc2fvDG5s6U" style="display:none;">maan dhavataya #songviral #explore #trending #shortsfeed #marathi #viral #newsong #lyrics #love #gym</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1068,12 +1353,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>bUL4Fa6AOCM</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/bUL4Fa6AOCM" target="_blank" rel="noopener noreferrer">One day kokan trip 🚗 #explore #viral #kokan #travel #love #games #song #trending #bollywood #gym</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-bUL4Fa6AOCM', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/bUL4Fa6AOCM" target="_blank" rel="noopener noreferrer">One day kokan trip 🚗 #explore #viral #kokan #travel #love #games #song #trending #bollywood #gym</a>
+                    </div>
+                    <textarea id="title-bUL4Fa6AOCM" style="display:none;">One day kokan trip 🚗 #explore #viral #kokan #travel #love #games #song #trending #bollywood #gym</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1100,12 +1395,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>vdyG6ZC98_E</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/vdyG6ZC98_E" target="_blank" rel="noopener noreferrer">Are you ⛱️ or 🏔️ person.? #viral #beach #trending #trendingshorts #explore #mountains #travel #song</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-vdyG6ZC98_E', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/vdyG6ZC98_E" target="_blank" rel="noopener noreferrer">Are you ⛱️ or 🏔️ person.? #viral #beach #trending #trendingshorts #explore #mountains #travel #song</a>
+                    </div>
+                    <textarea id="title-vdyG6ZC98_E" style="display:none;">Are you ⛱️ or 🏔️ person.? #viral #beach #trending #trendingshorts #explore #mountains #travel #song</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1132,12 +1437,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>BolRng_b5oM</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/BolRng_b5oM" target="_blank" rel="noopener noreferrer">Tamhini Ghat 💀 #trending #viral #viralvideo #explore #travel #live #song #shortsfeed #shorts #reels</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-BolRng_b5oM', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/BolRng_b5oM" target="_blank" rel="noopener noreferrer">Tamhini Ghat 💀 #trending #viral #viralvideo #explore #travel #live #song #shortsfeed #shorts #reels</a>
+                    </div>
+                    <textarea id="title-BolRng_b5oM" style="display:none;">Tamhini Ghat 💀 #trending #viral #viralvideo #explore #travel #live #song #shortsfeed #shorts #reels</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1164,12 +1479,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>-q9-eUAAp0U</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/-q9-eUAAp0U" target="_blank" rel="noopener noreferrer">मनाचे गणपती #pune #trending #viral #viralvideo #explore #ganpati #live #song #shortsfeed #vlog#trend</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title--q9-eUAAp0U', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/-q9-eUAAp0U" target="_blank" rel="noopener noreferrer">मनाचे गणपती #pune #trending #viral #viralvideo #explore #ganpati #live #song #shortsfeed #vlog#trend</a>
+                    </div>
+                    <textarea id="title--q9-eUAAp0U" style="display:none;">मनाचे गणपती #pune #trending #viral #viralvideo #explore #ganpati #live #song #shortsfeed #vlog#trend</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1196,12 +1521,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>qe_PRzM-Rks</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/qe_PRzM-Rks" target="_blank" rel="noopener noreferrer">बैलपोळा #pune #trending #viral #viralvideo #explore #बैलगाडा #live #song #shortsfeed #bailgadasharya</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-qe_PRzM-Rks', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/qe_PRzM-Rks" target="_blank" rel="noopener noreferrer">बैलपोळा #pune #trending #viral #viralvideo #explore #बैलगाडा #live #song #shortsfeed #bailgadasharya</a>
+                    </div>
+                    <textarea id="title-qe_PRzM-Rks" style="display:none;">बैलपोळा #pune #trending #viral #viralvideo #explore #बैलगाडा #live #song #shortsfeed #bailgadasharya</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1228,12 +1563,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>wzE3o6Sp8Kc</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/wzE3o6Sp8Kc" target="_blank" rel="noopener noreferrer">Sinhgad #sinhgad #trending #viral  #viralvideo #explore #diwali #live #song #shortsfeed #fort #trek</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-wzE3o6Sp8Kc', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/wzE3o6Sp8Kc" target="_blank" rel="noopener noreferrer">Sinhgad #sinhgad #trending #viral  #viralvideo #explore #diwali #live #song #shortsfeed #fort #trek</a>
+                    </div>
+                    <textarea id="title-wzE3o6Sp8Kc" style="display:none;">Sinhgad #sinhgad #trending #viral  #viralvideo #explore #diwali #live #song #shortsfeed #fort #trek</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1260,12 +1605,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>57ftlw2KrDE</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/57ftlw2KrDE" target="_blank" rel="noopener noreferrer">Breathless #edit #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #video #hot</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-57ftlw2KrDE', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/57ftlw2KrDE" target="_blank" rel="noopener noreferrer">Breathless #edit #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #video #hot</a>
+                    </div>
+                    <textarea id="title-57ftlw2KrDE" style="display:none;">Breathless #edit #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #video #hot</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1292,12 +1647,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>nPf3APA2hJg</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/nPf3APA2hJg" target="_blank" rel="noopener noreferrer">Dahihandi 🌀🫧#dhol #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #dholtasha</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-nPf3APA2hJg', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/nPf3APA2hJg" target="_blank" rel="noopener noreferrer">Dahihandi 🌀🫧#dhol #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #dholtasha</a>
+                    </div>
+                    <textarea id="title-nPf3APA2hJg" style="display:none;">Dahihandi 🌀🫧#dhol #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #dholtasha</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1324,12 +1689,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>MaN3aur0Jro</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/MaN3aur0Jro" target="_blank" rel="noopener noreferrer">Ramanbaug #dhol #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #dholtasha</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-MaN3aur0Jro', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/MaN3aur0Jro" target="_blank" rel="noopener noreferrer">Ramanbaug #dhol #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #dholtasha</a>
+                    </div>
+                    <textarea id="title-MaN3aur0Jro" style="display:none;">Ramanbaug #dhol #trending #viral #viralvideo #explore #festival #live #song #shortsfeed #dholtasha</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1356,12 +1731,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>5dPlq4UjBUo</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/5dPlq4UjBUo" target="_blank" rel="noopener noreferrer">Dagdushet Ganpati #dagdusheth #puneganpati #pune #chintamani #sarveshBhele #lalbaughcharaja #mumbai</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-5dPlq4UjBUo', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/5dPlq4UjBUo" target="_blank" rel="noopener noreferrer">Dagdushet Ganpati #dagdusheth #puneganpati #pune #chintamani #sarveshBhele #lalbaughcharaja #mumbai</a>
+                    </div>
+                    <textarea id="title-5dPlq4UjBUo" style="display:none;">Dagdushet Ganpati #dagdusheth #puneganpati #pune #chintamani #sarveshBhele #lalbaughcharaja #mumbai</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1388,12 +1773,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>HkFBW_pFFRs</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/HkFBW_pFFRs" target="_blank" rel="noopener noreferrer">ramdara pune #viral #travel #explore #viralvideo #shorts #shortsfeed #pune #love #comedy #like #song</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-HkFBW_pFFRs', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/HkFBW_pFFRs" target="_blank" rel="noopener noreferrer">ramdara pune #viral #travel #explore #viralvideo #shorts #shortsfeed #pune #love #comedy #like #song</a>
+                    </div>
+                    <textarea id="title-HkFBW_pFFRs" style="display:none;">ramdara pune #viral #travel #explore #viralvideo #shorts #shortsfeed #pune #love #comedy #like #song</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1420,12 +1815,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>PPiBCtnLdLY</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/PPiBCtnLdLY" target="_blank" rel="noopener noreferrer">#viral #travel #explore #automobile #nature #viralvideo #shortsfeed  #shorts #like #subscribe #song</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-PPiBCtnLdLY', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/PPiBCtnLdLY" target="_blank" rel="noopener noreferrer">#viral #travel #explore #automobile #nature #viralvideo #shortsfeed  #shorts #like #subscribe #song</a>
+                    </div>
+                    <textarea id="title-PPiBCtnLdLY" style="display:none;">#viral #travel #explore #automobile #nature #viralvideo #shortsfeed  #shorts #like #subscribe #song</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1452,12 +1857,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>RIiz5PkiWPw</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/RIiz5PkiWPw" target="_blank" rel="noopener noreferrer">Pressure performer #trending  #viral #viralvideo #explore #festival #live #love #song #shortsfeed</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-RIiz5PkiWPw', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/RIiz5PkiWPw" target="_blank" rel="noopener noreferrer">Pressure performer #trending  #viral #viralvideo #explore #festival #live #love #song #shortsfeed</a>
+                    </div>
+                    <textarea id="title-RIiz5PkiWPw" style="display:none;">Pressure performer #trending  #viral #viralvideo #explore #festival #live #love #song #shortsfeed</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1484,12 +1899,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>QqKNu7KcaOQ</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/QqKNu7KcaOQ" target="_blank" rel="noopener noreferrer">Bangalore Ganpati #ganpati #viral #viralvideo #explore #festival #bangalore #love #song #shortsfeed</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-QqKNu7KcaOQ', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/QqKNu7KcaOQ" target="_blank" rel="noopener noreferrer">Bangalore Ganpati #ganpati #viral #viralvideo #explore #festival #bangalore #love #song #shortsfeed</a>
+                    </div>
+                    <textarea id="title-QqKNu7KcaOQ" style="display:none;">Bangalore Ganpati #ganpati #viral #viralvideo #explore #festival #bangalore #love #song #shortsfeed</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1516,12 +1941,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>2gCPE-y5f9k</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/2gCPE-y5f9k" target="_blank" rel="noopener noreferrer">Breathless by my lens #breathlesssong #viral #viralvideo #explore #motivation #youtubeshorts #travel</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-2gCPE-y5f9k', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/2gCPE-y5f9k" target="_blank" rel="noopener noreferrer">Breathless by my lens #breathlesssong #viral #viralvideo #explore #motivation #youtubeshorts #travel</a>
+                    </div>
+                    <textarea id="title-2gCPE-y5f9k" style="display:none;">Breathless by my lens #breathlesssong #viral #viralvideo #explore #motivation #youtubeshorts #travel</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1548,12 +1983,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>FSxTfPJxpEM</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/FSxTfPJxpEM" target="_blank" rel="noopener noreferrer">dagdushet halwai ganpati pune #dagdushethganpati #festival #ganesh #viral#trending #pune</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-FSxTfPJxpEM', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/FSxTfPJxpEM" target="_blank" rel="noopener noreferrer">dagdushet halwai ganpati pune #dagdushethganpati #festival #ganesh #viral#trending #pune</a>
+                    </div>
+                    <textarea id="title-FSxTfPJxpEM" style="display:none;">dagdushet halwai ganpati pune #dagdushethganpati #festival #ganesh #viral#trending #pune</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1580,12 +2025,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>tmVHj-JldHU</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/tmVHj-JldHU" target="_blank" rel="noopener noreferrer">Dagdushet Ganpati #dagdusheth #puneganpati #pune #chintamani #sarveshBhele #lalbaughcharaja #mumbai</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-tmVHj-JldHU', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/tmVHj-JldHU" target="_blank" rel="noopener noreferrer">Dagdushet Ganpati #dagdusheth #puneganpati #pune #chintamani #sarveshBhele #lalbaughcharaja #mumbai</a>
+                    </div>
+                    <textarea id="title-tmVHj-JldHU" style="display:none;">Dagdushet Ganpati #dagdusheth #puneganpati #pune #chintamani #sarveshBhele #lalbaughcharaja #mumbai</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1612,12 +2067,22 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
                     <span class="vid-id">ID: <code>st52KBSAxiw</code></span>
                 </div>
 
-                <h2 class="video-title">
-                    <a href="https://youtube.com/shorts/st52KBSAxiw" target="_blank" rel="noopener noreferrer">श्रीमंत दगडूशेठ हलवाई गणपती ✨🌺 | PUNE | 2024 Visarjan</a>
-                </h2>
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-st52KBSAxiw', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/st52KBSAxiw" target="_blank" rel="noopener noreferrer">श्रीमंत दगडूशेठ हलवाई गणपती ✨🌺 | PUNE | 2024 Visarjan</a>
+                    </div>
+                    <textarea id="title-st52KBSAxiw" style="display:none;">श्रीमंत दगडूशेठ हलवाई गणपती ✨🌺 | PUNE | 2024 Visarjan</textarea>
+                </div>
 
+                <!-- 2. Full Description Box with Copy CTA -->
                 
 
+                <!-- 3. Full Tags Box with Copy CTA -->
                 
             </div>
         </article>
@@ -1656,22 +2121,47 @@ In the village of Woolpit, England, villagers discovered a brother and sister sp
         function copyText(id, btn) {
             const input = document.getElementById(id);
             if (!input) return;
-            navigator.clipboard.writeText(input.value).then(() => {
-                const originalText = btn.innerText;
-                btn.innerText = '✓ Copied!';
+            const text = (input.value !== undefined) ? input.value : input.innerText;
+            const originalHtml = btn.innerHTML;
+            
+            function onSuccess() {
+                btn.innerHTML = '✓ Copied!';
                 btn.style.borderColor = '#10B981';
                 btn.style.color = '#34D399';
-                showToast();
+                showToast('✓ Copied to clipboard!');
                 setTimeout(() => {
-                    btn.innerText = originalText;
+                    btn.innerHTML = originalHtml;
                     btn.style.borderColor = '';
                     btn.style.color = '';
                 }, 1800);
-            });
+            }
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(onSuccess).catch(() => {
+                    fallbackCopy(text, onSuccess);
+                });
+            } else {
+                fallbackCopy(text, onSuccess);
+            }
         }
 
-        function showToast() {
+        function fallbackCopy(text, cb) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+                document.execCommand('copy');
+                if (cb) cb();
+            } catch (e) {}
+            document.body.removeChild(ta);
+        }
+
+        function showToast(msg) {
             const t = document.getElementById('toast');
+            if (msg) t.innerText = msg;
             t.classList.add('show');
             setTimeout(() => t.classList.remove('show'), 2000);
         }
