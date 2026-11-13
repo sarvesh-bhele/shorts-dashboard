@@ -181,6 +181,293 @@
         .stat-val.amber { color: var(--accent-amber); }
         .stat-val.green { color: var(--accent-green); }
 
+        /* --------------------------------------------------------------------------
+           AI Brain Command Center Styles
+           -------------------------------------------------------------------------- */
+        .brain-panel {
+            background: linear-gradient(135deg, rgba(30, 27, 75, 0.75) 0%, rgba(15, 23, 42, 0.85) 100%);
+            border: 1px solid #4F46E5;
+            border-radius: var(--radius-lg);
+            padding: 22px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 32px rgba(79, 70, 229, 0.22);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brain-panel::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, #6366F1, #A855F7, #EC4899);
+        }
+
+        .brain-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+            padding-bottom: 12px;
+        }
+
+        .brain-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(99, 102, 241, 0.18);
+            border: 1px solid #6366F1;
+            color: #C7D2FE;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 5px 12px;
+            border-radius: 999px;
+            letter-spacing: 0.04em;
+        }
+
+        .brain-pulse {
+            width: 8px;
+            height: 8px;
+            background: #10B981;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #10B981;
+            animation: pulse 2s infinite;
+        }
+
+        .brain-health-badge {
+            font-size: 13px;
+            color: #94A3B8;
+        }
+
+        .brain-health-badge strong {
+            color: #34D399;
+            font-size: 16px;
+        }
+
+        .brain-meta-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .brain-meta-item {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-sm);
+            padding: 10px 12px;
+        }
+
+        .meta-label {
+            font-size: 10px;
+            font-weight: 800;
+            color: #818CF8;
+            letter-spacing: 0.05em;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .meta-val {
+            font-size: 13px;
+            font-weight: 700;
+            color: #F1F5F9;
+        }
+
+        .meta-val.highlight {
+            color: #FBBF24;
+        }
+
+        .meta-val.status-green {
+            color: #34D399;
+        }
+
+        /* Next Best Action Card */
+        .brain-next-action-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(129, 140, 248, 0.35);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            margin-bottom: 18px;
+        }
+
+        .action-kicker {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            color: #A5B4FC;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .action-heading {
+            font-size: 18px;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+
+        .action-hook-box {
+            background: rgba(0, 0, 0, 0.4);
+            border-left: 3px solid #F59E0B;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #FDE68A;
+        }
+
+        .action-tags-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 12px;
+            color: #CBD5E1;
+        }
+
+        .action-tag-pill {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        /* Decisions Section */
+        .brain-decisions-section {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .brain-sec-label {
+            font-size: 12px;
+            font-weight: 800;
+            color: #94A3B8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+
+        .brain-decisions-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .decision-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-md);
+            padding: 14px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .decision-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .decision-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            color: #818CF8;
+        }
+
+        .decision-prio {
+            background: #EF4444;
+            color: #FFFFFF;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 2px 7px;
+            border-radius: 4px;
+        }
+
+        .decision-body {
+            color: #FFFFFF;
+            margin-bottom: 6px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .decision-meta {
+            color: #94A3B8;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .decision-meta strong {
+            color: #CBD5E1;
+        }
+
+        /* Dual Grid */
+        .brain-dual-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+            margin-top: 14px;
+        }
+
+        .brain-subcard {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-md);
+            padding: 14px;
+        }
+
+        .exp-item, .op-item {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: var(--radius-sm);
+            padding: 10px;
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.45;
+        }
+
+        .exp-head, .op-head {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .exp-id, .op-rank {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 800;
+            color: #38BDF8;
+        }
+
+        .exp-name, .op-title {
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .op-score {
+            margin-left: auto;
+            background: rgba(99, 102, 241, 0.25);
+            color: #A5B4FC;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .exp-hypo, .op-hook {
+            color: #CBD5E1;
+            margin-bottom: 3px;
+        }
+
+        .exp-metric, .op-hypo {
+            color: #94A3B8;
+            font-size: 11px;
+        }
+
         /* Filter Controls */
         .controls-bar {
             display: flex;
@@ -611,7 +898,7 @@
                         <h1>Autonomous Shorts Studio</h1>
                         <div class="brand-sub">
                             <span class="live-dot"></span>
-                            <span>Live Cloud Sync &bull; 13 Nov 2026, 03:46 PM IST</span>
+                            <span>Live Cloud Sync &bull; 13 Nov 2026, 04:21 PM IST</span>
                         </div>
                     </div>
                 </div>
@@ -642,6 +929,161 @@
             </div>
         </header>
 
+        
+        <section class="brain-panel">
+            <div class="brain-top-row">
+                <div class="brain-badge">
+                    <span class="brain-pulse"></span>
+                    <span>🧠 AUTONOMOUS YOUTUBE INTELLIGENCE BRAIN (ONLINE)</span>
+                </div>
+                <div class="brain-health-badge">
+                    <span>Channel Health Index:</span>
+                    <strong>8.1 / 10.0</strong>
+                </div>
+            </div>
+
+            <div class="brain-meta-row">
+                <div class="brain-meta-item">
+                    <span class="meta-label">CURRENT GROWTH PHASE</span>
+                    <span class="meta-val">High-Contrast Storytelling & Wealth Loopholes Focus</span>
+                </div>
+                <div class="brain-meta-item">
+                    <span class="meta-label">PRIMARY FOCUS ARCHETYPE</span>
+                    <span class="meta-val highlight">Asymmetric Trades & Wealth Loopholes</span>
+                </div>
+                <div class="brain-meta-item">
+                    <span class="meta-label">AUTOMATION TEAM STATUS</span>
+                    <span class="meta-val status-green">✓ Cloud Runner Active & Ready</span>
+                </div>
+            </div>
+
+            <!-- Next Best Strategic Action Card (CEO Directive) -->
+            <div class="brain-next-action-card">
+                <div class="action-kicker">⚡ NEXT BEST STRATEGIC ACTION (CEO DIRECTIVE)</div>
+                <div class="action-heading">"Blockbuster Laughed Netflix Out of the Room"</div>
+                <div class="action-hook-box">
+                    🎯 <strong>Mandatory 0-2s Hook:</strong> "Blockbuster could have bought Netflix for fifty million dollars... they laughed in his face!"
+                </div>
+                <div class="action-tags-row">
+                    <span class="action-tag-pill">🎨 Style: <strong>tall-tale</strong></span>
+                    <span class="action-tag-pill">🧬 Archetype: <strong>corporate-rivalry</strong></span>
+                    <span class="action-tag-pill">⏰ Optimal Release: <strong>09:45 AM IST</strong></span>
+                    <span class="action-tag-pill">🔒 Privacy: <strong>public</strong></span>
+                </div>
+            </div>
+
+            <!-- 7-Point CEO Decisions Log -->
+            <div class="brain-decisions-section">
+                <div class="brain-sec-label">📋 EXECUTIVE DECISIONS LOG (7-POINT TRANSPARENCY PROTOCOL)</div>
+                <div class="brain-decisions-grid">
+                    
+            <div class="decision-card">
+                <div class="decision-head">
+                    <span class="decision-id">DEC-20261113-003</span>
+                    <span class="decision-prio">HIGH</span>
+                </div>
+                <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
+                <div class="decision-meta">
+                    <div>💡 <strong>Reason:</strong> Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
+                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (1,907 views, 46 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds.</div>
+                    <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
+                </div>
+            </div>
+            
+            <div class="decision-card">
+                <div class="decision-head">
+                    <span class="decision-id">DEC-20261113-002</span>
+                    <span class="decision-prio">HIGH</span>
+                </div>
+                <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
+                <div class="decision-meta">
+                    <div>💡 <strong>Reason:</strong> Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
+                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (1,907 views, 46 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds.</div>
+                    <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
+                </div>
+            </div>
+            
+            <div class="decision-card">
+                <div class="decision-head">
+                    <span class="decision-id">DEC-20261113-001</span>
+                    <span class="decision-prio">HIGH</span>
+                </div>
+                <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
+                <div class="decision-meta">
+                    <div>💡 <strong>Reason:</strong> Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
+                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (1,907 views, 46 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds.</div>
+                    <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+
+            <!-- Dual Grid: Active Experiments & Top Opportunities -->
+            <div class="brain-dual-grid">
+                <div class="brain-subcard">
+                    <div class="brain-sec-label">🧪 ACTIVE GROWTH EXPERIMENTS</div>
+                    
+            <div class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-id">EXP-001</span>
+                    <span class="exp-name">Line-1 Exact Dollar Figure vs Abstract Curiosity</span>
+                </div>
+                <div class="exp-hypo">🧪 <strong>Hypothesis:</strong> Opening with concrete numbers ($800 vs $300B or $50M) increases 0-3s retention by 25%</div>
+                <div class="exp-metric">🎯 <strong>Target:</strong> Average retention > 70% and 48-hour views > 1,200</div>
+            </div>
+            
+            <div class="exp-item">
+                <div class="exp-head">
+                    <span class="exp-id">EXP-002</span>
+                    <span class="exp-name">IST Morning Algorithmic Release Window</span>
+                </div>
+                <div class="exp-hypo">🧪 <strong>Hypothesis:</strong> Scheduling releases between 09:30 AM and 10:15 AM IST aligns with mobile peak commute</div>
+                <div class="exp-metric">🎯 <strong>Target:</strong> Initial 2-hour velocity boost of +40% impressions</div>
+            </div>
+            
+                </div>
+                <div class="brain-subcard">
+                    <div class="brain-sec-label">🔥 TOP RANKED CONTENT OPPORTUNITIES</div>
+                    
+            <div class="op-item">
+                <div class="op-head">
+                    <span class="op-rank">#1</span>
+                    <span class="op-title">Blockbuster Laughed Netflix Out of the Room</span>
+                    <span class="op-score">15.71 pts</span>
+                </div>
+                <div class="op-hook">⚡ "Blockbuster could have bought Netflix for fifty million dollars... they laughed in his face!"</div>
+                <div class="op-hypo">📈 Matches channel top hit archetype 'corporate-rivalry' with strong financial contrast. First 2-second hook delivers instant pattern interrupt targeting > 1,200 views.</div>
+            </div>
+            
+            <div class="op-item">
+                <div class="op-head">
+                    <span class="op-rank">#2</span>
+                    <span class="op-title">The Student Who Drew the Nike Swoosh for $35</span>
+                    <span class="op-score">15.25 pts</span>
+                </div>
+                <div class="op-hook">⚡ "A college student was paid just $35 to design this logo... that built a $150 BILLION empire!"</div>
+                <div class="op-hypo">📈 Matches channel top hit archetype 'accidental-fortune' with strong financial contrast. First 2-second hook delivers instant pattern interrupt targeting > 1,200 views.</div>
+            </div>
+            
+            <div class="op-item">
+                <div class="op-head">
+                    <span class="op-rank">#3</span>
+                    <span class="op-title">The Man Who Sued Red Bull for Wings</span>
+                    <span class="op-score">15.13 pts</span>
+                </div>
+                <div class="op-hook">⚡ "This man sued Red Bull because it didn't give him wings... and WON MILLIONS!"</div>
+                <div class="op-hypo">📈 Matches channel top hit archetype 'wild-loophole' with strong financial contrast. First 2-second hook delivers instant pattern interrupt targeting > 1,200 views.</div>
+            </div>
+            
+                </div>
+            </div>
+        </section>
+        
+
         <div class="controls-bar">
             <div class="filter-tabs">
                 <button class="filter-btn active" onclick="setFilter('all', this)">All Videos (33)</button>
@@ -660,7 +1102,7 @@
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the million dollar pixel page #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CKTG29cG&rs=AOn4CLBg32xaFBFDtpB1qGjV4ZPOptlwoA" alt="The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/FaMv9q-lnhI/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLD9VwOnbYTtDbT2CXHdMoodQMIttg" alt="The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/FaMv9q-lnhI/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -668,14 +1110,14 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CKTG29cG&rs=AOn4CLBg32xaFBFDtpB1qGjV4ZPOptlwoA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLD9VwOnbYTtDbT2CXHdMoodQMIttg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
             <div class="card-right">
                 <div class="card-meta">
                     <span class="status-pill badge-amber">🟡 SCHEDULED</span>
-                    <span class="time-ist">🗓️ 13 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 1 hours</span>
+                    <span class="time-ist">🗓️ 13 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 0 hours</span>
                     <span class="vid-id">ID: <code>FaMv9q-lnhI</code></span>
                 </div>
 
@@ -730,7 +1172,7 @@ Subscribe for daily viral business stories and life-changing facts! 🔔
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the man who sold the eiffel tower #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CKTG29cG&rs=AOn4CLCZ5WIjDiWu_ll7FXOXvnthHS0alA" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCn55DOdtwjh6HtcD0_ydzGLkh9VQ" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -738,14 +1180,14 @@ Subscribe for daily viral business stories and life-changing facts! 🔔
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CKTG29cG&rs=AOn4CLCZ5WIjDiWu_ll7FXOXvnthHS0alA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCn55DOdtwjh6HtcD0_ydzGLkh9VQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
             <div class="card-right">
                 <div class="card-meta">
                     <span class="status-pill badge-amber">🟡 SCHEDULED</span>
-                    <span class="time-ist">🗓️ 14 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 1d 1h</span>
+                    <span class="time-ist">🗓️ 14 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 1d 0h</span>
                     <span class="vid-id">ID: <code>_QsVgp0FNOA</code></span>
                 </div>
 
@@ -802,7 +1244,7 @@ Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable f
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the mystery of the green children #shorts #darkmystery #unexplained">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CKTG29cG&rs=AOn4CLDwXVrc-vkXvSv0VzYL9qysUI7Bmg" alt="The Mystery of the Green Children #Shorts #DarkMystery #Unexplained" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCMDJE_KAufWfNU8d_O4Rx00R7tKQ" alt="The Mystery of the Green Children #Shorts #DarkMystery #Unexplained" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -810,14 +1252,14 @@ Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable f
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CKTG29cG&rs=AOn4CLDwXVrc-vkXvSv0VzYL9qysUI7Bmg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCMDJE_KAufWfNU8d_O4Rx00R7tKQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
             <div class="card-right">
                 <div class="card-meta">
                     <span class="status-pill badge-amber">🟡 SCHEDULED</span>
-                    <span class="time-ist">🗓️ 15 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 2d 1h</span>
+                    <span class="time-ist">🗓️ 15 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 2d 0h</span>
                     <span class="vid-id">ID: <code>H8vrUx2nyUc</code></span>
                 </div>
 
