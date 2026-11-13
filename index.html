@@ -410,6 +410,83 @@
             line-height: 1.4;
         }
 
+        /* Buffer Card */
+        .brain-buffer-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border: 1px solid rgba(129, 140, 248, 0.3);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            margin-bottom: 16px;
+        }
+
+        .buffer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .buffer-badge {
+            font-size: 11px;
+            font-weight: 800;
+            color: #818CF8;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .buffer-count {
+            font-size: 12px;
+            color: #CBD5E1;
+        }
+
+        .buffer-count strong {
+            color: #34D399;
+        }
+
+        .buffer-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .buffer-item {
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        .buffer-item.filled {
+            border-left: 3px solid #10B981;
+        }
+
+        .buffer-item.needed {
+            border-left: 3px dashed #F59E0B;
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .buffer-date {
+            font-weight: 700;
+            color: #F8FAFC;
+            margin-bottom: 2px;
+        }
+
+        .buffer-title {
+            color: #94A3B8;
+            font-size: 11px;
+            line-height: 1.3;
+        }
+
+        .buffer-note {
+            font-size: 11px;
+            color: #94A3B8;
+            line-height: 1.4;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 8px;
+        }
+
         /* Decisions Section */
         .brain-decisions-section {
             margin-top: 16px;
@@ -975,7 +1052,7 @@
                         <h1>Autonomous Shorts Studio</h1>
                         <div class="brand-sub">
                             <span class="live-dot"></span>
-                            <span>Live Cloud Sync &bull; 13 Nov 2026, 05:04 PM IST</span>
+                            <span>Live Cloud Sync &bull; 13 Nov 2026, 07:35 PM IST</span>
                         </div>
                     </div>
                 </div>
@@ -989,7 +1066,7 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">Scheduled Queue</div>
-                    <div class="stat-val amber">2 Videos</div>
+                    <div class="stat-val amber">3 Videos</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Public Live</div>
@@ -1001,7 +1078,7 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Total Uploads</div>
-                    <div class="stat-val">33 Videos</div>
+                    <div class="stat-val">34 Videos</div>
                 </div>
             </div>
         </header>
@@ -1015,7 +1092,7 @@
                 </div>
                 <div class="brain-health-badge">
                     <span>Channel Health Index:</span>
-                    <strong>8.1 / 10.0</strong>
+                    <strong>7.7 / 10.0</strong>
                 </div>
             </div>
 
@@ -1037,13 +1114,13 @@
             <!-- Next Best Strategic Action Card (CEO Directive) -->
             <div class="brain-next-action-card">
                 <div class="action-kicker">⚡ NEXT BEST STRATEGIC ACTION (CEO DIRECTIVE)</div>
-                <div class="action-heading">"Blockbuster Laughed Netflix Out of the Room"</div>
+                <div class="action-heading">"The Student Who Drew the Nike Swoosh for $35"</div>
                 <div class="action-hook-box">
-                    🎯 <strong>Mandatory 0-2s Hook:</strong> "Blockbuster could have bought Netflix for fifty million dollars... they laughed in his face!"
+                    🎯 <strong>Mandatory 0-2s Hook:</strong> "A college student was paid just $35 to design this logo... that built a $150 BILLION empire!"
                 </div>
                 <div class="action-tags-row">
                     <span class="action-tag-pill">🎨 Style: <strong>tall-tale</strong></span>
-                    <span class="action-tag-pill">🧬 Archetype: <strong>corporate-rivalry</strong></span>
+                    <span class="action-tag-pill">🧬 Archetype: <strong>accidental-fortune</strong></span>
                     <span class="action-tag-pill">⏰ Optimal Release: <strong>05:00 PM IST</strong></span>
                     <span class="action-tag-pill">🔒 Privacy: <strong>public</strong></span>
                 </div>
@@ -1079,11 +1156,64 @@
                 </div>
             </div>
 
+            <!-- 4-5 Day Rolling Schedule Buffer Card -->
+            <div class="brain-buffer-card">
+                <div class="buffer-top">
+                    <span class="buffer-badge">📅 4-5 DAY ROLLING SCHEDULE BUFFER</span>
+                    <span class="buffer-count"><strong>3</strong> / 5 Days Buffered (DEFICIT (-2 videos needed))</span>
+                </div>
+                <div class="buffer-timeline">
+                    
+            <div class="buffer-item filled">
+                <div class="buffer-date">🗓️ 14 Nov 2026, 05:00 PM IST</div>
+                <div class="buffer-title">🟢 The Man Who Sold the Eiffel Tower #Shorts #BusinessStor...</div>
+            </div>
+            
+            <div class="buffer-item filled">
+                <div class="buffer-date">🗓️ 15 Nov 2026, 05:00 PM IST</div>
+                <div class="buffer-title">🟢 Two Children With Green Skin Appeared in 1150 🤯 #Shorts...</div>
+            </div>
+            
+            <div class="buffer-item filled">
+                <div class="buffer-date">🗓️ 16 Nov 2026, 05:00 PM IST</div>
+                <div class="buffer-title">🟢 Blockbuster Laughed Netflix Out of the Room #Shorts #Bu...</div>
+            </div>
+            
+            <div class="buffer-item needed">
+                <div class="buffer-date">⏳ 17 Nov 2026, 05:00 PM IST</div>
+                <div class="buffer-title">🟡 Auto-Pipeline Generating Slot...</div>
+            </div>
+            
+            <div class="buffer-item needed">
+                <div class="buffer-date">⏳ 18 Nov 2026, 05:00 PM IST</div>
+                <div class="buffer-title">🟡 Auto-Pipeline Generating Slot...</div>
+            </div>
+            
+                </div>
+                <div class="buffer-note">
+                    ⚡ <strong>Autonomous Queue Rearranger:</strong> Active. If engagement drops or a video under-performs, higher-affinity Hit-DNA content is automatically promoted to release earlier.
+                </div>
+            </div>
+
             <!-- 7-Point CEO Decisions Log -->
             <div class="brain-decisions-section">
                 <div class="brain-sec-label">📋 EXECUTIVE DECISIONS LOG (7-POINT TRANSPARENCY PROTOCOL)</div>
                 <div class="brain-decisions-grid">
                     
+            <div class="decision-card">
+                <div class="decision-head">
+                    <span class="decision-id">DEC-20261113-008</span>
+                    <span class="decision-prio">HIGH</span>
+                </div>
+                <div class="decision-body">📌 Produce 'The Student Who Drew the Nike Swoosh for $35' (tall-tale)</div>
+                <div class="decision-meta">
+                    <div>💡 <strong>Reason:</strong> YouTube Algorithm Reach & Record-Breaker Protocol: Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate peak organic reach (e.g. Domino's pizza trade at 2,613 views / 41 likes). 'The Student Who Drew the Nike Swoosh for $35' carries the highest viral affinity score (15.25 pts) and delivers an immediate 0-2s contrast hook to maximize Viewed vs Swiped rate (>75%).</div>
+                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (2,613 views, 41 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['car', 'empire', 'billion', 'million'].</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> 🏆 OUTPERFORM CHANNEL RECORD: Exceed previous #1 hit (2,613 views & 41 likes) with > 3,004 views and > 49 likes within 72 hours of public indexing; sustain > 75% Viewed vs Swiped rate (VvSA) and > 90% APV retention with ZERO negative dips in channel analytics.</div>
+                    <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='The Student Who Drew the Nike Swoosh for $35', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
+                </div>
+            </div>
+            
             <div class="decision-card">
                 <div class="decision-head">
                     <span class="decision-id">DEC-20261113-007</span>
@@ -1101,20 +1231,6 @@
             <div class="decision-card">
                 <div class="decision-head">
                     <span class="decision-id">DEC-20261113-006</span>
-                    <span class="decision-prio">HIGH</span>
-                </div>
-                <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
-                <div class="decision-meta">
-                    <div>💡 <strong>Reason:</strong> YouTube Algorithm Reach & Record-Breaker Protocol: Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate peak organic reach (e.g. Domino's pizza trade at 2,613 views / 41 likes). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook to maximize Viewed vs Swiped rate (>75%).</div>
-                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (2,613 views, 41 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
-                    <div>🎯 <strong>Expected Outcome:</strong> 🏆 OUTPERFORM CHANNEL RECORD: Exceed previous #1 hit (2,613 views & 41 likes) with > 3,004 views and > 49 likes within 72 hours of public indexing; sustain > 75% Viewed vs Swiped rate (VvSA) and > 90% APV retention with ZERO negative dips in channel analytics.</div>
-                    <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
-                </div>
-            </div>
-            
-            <div class="decision-card">
-                <div class="decision-head">
-                    <span class="decision-id">DEC-20261113-005</span>
                     <span class="decision-prio">HIGH</span>
                 </div>
                 <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
@@ -1159,16 +1275,6 @@
             <div class="op-item">
                 <div class="op-head">
                     <span class="op-rank">#1</span>
-                    <span class="op-title">Blockbuster Laughed Netflix Out of the Room</span>
-                    <span class="op-score">15.71 pts</span>
-                </div>
-                <div class="op-hook">⚡ "Blockbuster could have bought Netflix for fifty million dollars... they laughed in his face!"</div>
-                <div class="op-hypo">📈 Matches channel top hit archetype 'corporate-rivalry' with strong financial contrast. First 2-second hook delivers instant pattern interrupt targeting > 1,200 views.</div>
-            </div>
-            
-            <div class="op-item">
-                <div class="op-head">
-                    <span class="op-rank">#2</span>
                     <span class="op-title">The Student Who Drew the Nike Swoosh for $35</span>
                     <span class="op-score">15.25 pts</span>
                 </div>
@@ -1178,11 +1284,21 @@
             
             <div class="op-item">
                 <div class="op-head">
-                    <span class="op-rank">#3</span>
+                    <span class="op-rank">#2</span>
                     <span class="op-title">The Man Who Sued Red Bull for Wings</span>
                     <span class="op-score">15.13 pts</span>
                 </div>
                 <div class="op-hook">⚡ "This man sued Red Bull because it didn't give him wings... and WON MILLIONS!"</div>
+                <div class="op-hypo">📈 Matches channel top hit archetype 'wild-loophole' with strong financial contrast. First 2-second hook delivers instant pattern interrupt targeting > 1,200 views.</div>
+            </div>
+            
+            <div class="op-item">
+                <div class="op-head">
+                    <span class="op-rank">#3</span>
+                    <span class="op-title">The $1.6 Million ATM Glitch</span>
+                    <span class="op-score">15.01 pts</span>
+                </div>
+                <div class="op-hook">⚡ "A bartender found a midnight ATM glitch... and withdrew 1.6 MILLION dollars in cash!"</div>
                 <div class="op-hypo">📈 Matches channel top hit archetype 'wild-loophole' with strong financial contrast. First 2-second hook delivers instant pattern interrupt targeting > 1,200 views.</div>
             </div>
             
@@ -1193,8 +1309,8 @@
 
         <div class="controls-bar">
             <div class="filter-tabs">
-                <button class="filter-btn active" onclick="setFilter('all', this)">All Videos (33)</button>
-                <button class="filter-btn" onclick="setFilter('scheduled', this)">🟡 Scheduled Queue (2)</button>
+                <button class="filter-btn active" onclick="setFilter('all', this)">All Videos (34)</button>
+                <button class="filter-btn" onclick="setFilter('scheduled', this)">🟡 Scheduled Queue (3)</button>
                 <button class="filter-btn" onclick="setFilter('public', this)">🟢 Public Live (31)</button>
             </div>
 
@@ -1209,7 +1325,7 @@
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the man who sold the eiffel tower #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CLjp29cG&rs=AOn4CLDW4l6gZxw0eFyGQRgCVfb22y82vA" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CIyy3NcG&rs=AOn4CLCrIyhh9N8Bq2y4-lu4qhiZtgAE1g" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -1217,14 +1333,14 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CLjp29cG&rs=AOn4CLDW4l6gZxw0eFyGQRgCVfb22y82vA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CIyy3NcG&rs=AOn4CLCrIyhh9N8Bq2y4-lu4qhiZtgAE1g" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
             <div class="card-right">
                 <div class="card-meta">
                     <span class="status-pill badge-amber">🟡 SCHEDULED</span>
-                    <span class="time-ist">🗓️ 14 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 23 hours</span>
+                    <span class="time-ist">🗓️ 14 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 21 hours</span>
                     <span class="vid-id">ID: <code>_QsVgp0FNOA</code></span>
                 </div>
 
@@ -1281,7 +1397,7 @@ Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable f
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="two children with green skin appeared in 1150 🤯 #shorts #mystery #history">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CLjp29cG&rs=AOn4CLBcpnaKOhC10L8g3kZJG9BUOWXntw" alt="Two Children With Green Skin Appeared in 1150 🤯 #Shorts #Mystery #History" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CIyy3NcG&rs=AOn4CLCIMtRzMm1f40P-upFMrGewwoN5WA" alt="Two Children With Green Skin Appeared in 1150 🤯 #Shorts #Mystery #History" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -1289,14 +1405,14 @@ Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable f
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CLjp29cG&rs=AOn4CLBcpnaKOhC10L8g3kZJG9BUOWXntw" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CIyy3NcG&rs=AOn4CLCIMtRzMm1f40P-upFMrGewwoN5WA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
             <div class="card-right">
                 <div class="card-meta">
                     <span class="status-pill badge-amber">🟡 SCHEDULED</span>
-                    <span class="time-ist">🗓️ 15 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 1d 23h</span>
+                    <span class="time-ist">🗓️ 15 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 1d 21h</span>
                     <span class="vid-id">ID: <code>H8vrUx2nyUc</code></span>
                 </div>
 
@@ -1348,6 +1464,84 @@ Subscribe for daily viral true stories & ancient mysteries! 🔔
                     </div>
                     <div class="tags-list"><span class="tag-pill">#AncientHistory</span><span class="tag-pill">#BizarreFacts</span><span class="tag-pill">#CreepyFacts</span><span class="tag-pill">#DarkHistory</span><span class="tag-pill">#DidYouKnow</span><span class="tag-pill">#GreenChildren</span><span class="tag-pill">#HistoricalMysteries</span><span class="tag-pill">#History</span><span class="tag-pill">#Mystery</span><span class="tag-pill">#ScienceFacts</span></div>
                     <textarea id="tags-H8vrUx2nyUc" style="display:none;">AncientHistory, BizarreFacts, CreepyFacts, DarkHistory, DidYouKnow, GreenChildren, HistoricalMysteries, History, Mystery, ScienceFacts, Shorts, Storytime, TrueStory, Unexplained, ViralShorts, Woolpit</textarea>
+                </div>
+            </div>
+        </article>
+        
+        <article class="video-card card-scheduled" data-filter="scheduled" data-title="blockbuster laughed netflix out of the room #shorts #businessstory #millionairemindset">
+            <div class="card-left">
+                <div class="thumb-container">
+                    <img src="https://i9.ytimg.com/vi/TTacWxz3F18/qhddefault.jpg?sqp=CIyy3NcG&rs=AOn4CLA8M9etS4YKYgOcvaHygskXdw4qwQ" alt="Blockbuster Laughed Netflix Out of the Room #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/TTacWxz3F18/hqdefault.jpg';">
+                    <div class="thumb-badge badge-amber">SCHEDULED</div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://youtube.com/shorts/TTacWxz3F18" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        Watch on YouTube
+                    </a>
+                    <a href="https://i9.ytimg.com/vi/TTacWxz3F18/qhddefault.jpg?sqp=CIyy3NcG&rs=AOn4CLA8M9etS4YKYgOcvaHygskXdw4qwQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                </div>
+            </div>
+
+            <div class="card-right">
+                <div class="card-meta">
+                    <span class="status-pill badge-amber">🟡 SCHEDULED</span>
+                    <span class="time-ist">🗓️ 16 Nov 2026, 05:00 PM IST</span> <span class="rel-pill">⏳ in 2d 21h</span>
+                    <span class="vid-id">ID: <code>TTacWxz3F18</code></span>
+                </div>
+
+                <!-- 1. Full Title Box with Copy CTA -->
+                <div class="field-box title-field">
+                    <div class="field-head">
+                        <span class="field-label">📌 FULL TITLE</span>
+                        <button class="btn-copy-sm" onclick="copyText('title-TTacWxz3F18', this)">📋 Copy Title</button>
+                    </div>
+                    <div class="field-content-title">
+                        <a href="https://youtube.com/shorts/TTacWxz3F18" target="_blank" rel="noopener noreferrer">Blockbuster Laughed Netflix Out of the Room #Shorts #BusinessStory #MillionaireMindset</a>
+                    </div>
+                    <textarea id="title-TTacWxz3F18" style="display:none;">Blockbuster Laughed Netflix Out of the Room #Shorts #BusinessStory #MillionaireMindset</textarea>
+                </div>
+
+                <!-- 2. Full Description Box with Copy CTA -->
+                <div class="field-box desc-field">
+                    <div class="field-head">
+                        <span class="field-label">📝 FULL DESCRIPTION</span>
+                        <button class="btn-copy-sm" onclick="copyText('desc-TTacWxz3F18', this)">📋 Copy Description</button>
+                    </div>
+                    <div class="field-content-desc">Blockbuster could have bought Netflix for fifty million dollars... they laughed in his face! 🤯
+
+In the year 2000, Blockbuster was the undisputed king of home entertainment with 9,000 stores and $800M in late fees alone. Meanwhile, Netflix was a tiny startup bleeding cash.
+
+Founder Reed Hastings offered to sell Netflix to Blockbuster for $50M. The executives literally laughed in his face, calling streaming a passing fad.
+
+Ten years later, Blockbuster filed for total bankruptcy. Today, Netflix is worth over $200 BILLION. Arrogance in business turns empires into dust! 💡
+
+What is the biggest business mistake in history? Drop a comment below! 👇
+Subscribe for more daily viral true stories & financial history! 🔔
+
+#Shorts #BusinessStory #MillionaireMindset #Blockbuster #Netflix #SuccessStory #Entrepreneur #ViralShorts #TrueStory</div>
+                    <textarea id="desc-TTacWxz3F18" style="display:none;">Blockbuster could have bought Netflix for fifty million dollars... they laughed in his face! 🤯
+
+In the year 2000, Blockbuster was the undisputed king of home entertainment with 9,000 stores and $800M in late fees alone. Meanwhile, Netflix was a tiny startup bleeding cash.
+
+Founder Reed Hastings offered to sell Netflix to Blockbuster for $50M. The executives literally laughed in his face, calling streaming a passing fad.
+
+Ten years later, Blockbuster filed for total bankruptcy. Today, Netflix is worth over $200 BILLION. Arrogance in business turns empires into dust! 💡
+
+What is the biggest business mistake in history? Drop a comment below! 👇
+Subscribe for more daily viral true stories & financial history! 🔔
+
+#Shorts #BusinessStory #MillionaireMindset #Blockbuster #Netflix #SuccessStory #Entrepreneur #ViralShorts #TrueStory</textarea>
+                </div>
+
+                <!-- 3. Full Tags Box with Copy CTA -->
+                <div class="field-box tags-field">
+                    <div class="field-head">
+                        <span class="field-label">🏷️ TAGS (16)</span>
+                        <button class="btn-copy-sm" onclick="copyText('tags-TTacWxz3F18', this)">📋 Copy Tags</button>
+                    </div>
+                    <div class="tags-list"><span class="tag-pill">#Blockbuster</span><span class="tag-pill">#BusinessMistakes</span><span class="tag-pill">#BusinessStory</span><span class="tag-pill">#DidYouKnow</span><span class="tag-pill">#Entrepreneur</span><span class="tag-pill">#MillionaireMindset</span><span class="tag-pill">#MoneyMindset</span><span class="tag-pill">#Netflix</span><span class="tag-pill">#ReedHastings</span><span class="tag-pill">#Shorts</span></div>
+                    <textarea id="tags-TTacWxz3F18" style="display:none;">Blockbuster, BusinessMistakes, BusinessStory, DidYouKnow, Entrepreneur, MillionaireMindset, MoneyMindset, Netflix, ReedHastings, Shorts, Startup, SuccessStory, TrendingShorts, TrueStory, ViralShorts, WealthSecrets</textarea>
                 </div>
             </div>
         </article>
