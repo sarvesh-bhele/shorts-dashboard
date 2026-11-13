@@ -333,6 +333,83 @@
             border-radius: 6px;
         }
 
+        /* Record Breaker Box */
+        .brain-record-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.7) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            margin-bottom: 16px;
+        }
+
+        .record-badge {
+            font-size: 11px;
+            font-weight: 800;
+            color: #34D399;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .record-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .record-col {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .record-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: #94A3B8;
+            text-transform: uppercase;
+        }
+
+        .record-val {
+            font-size: 15px;
+            font-weight: 800;
+            color: #FFFFFF;
+        }
+
+        .record-val.green-text {
+            color: #34D399;
+        }
+
+        .record-sub {
+            font-size: 11px;
+            color: #94A3B8;
+        }
+
+        /* Zero Negative Shields */
+        .brain-shields-card {
+            background: rgba(15, 23, 42, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            margin-bottom: 16px;
+        }
+
+        .shields-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 8px;
+        }
+
+        .shield-item {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid #10B981;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #E2E8F0;
+            line-height: 1.4;
+        }
+
         /* Decisions Section */
         .brain-decisions-section {
             margin-top: 16px;
@@ -898,7 +975,7 @@
                         <h1>Autonomous Shorts Studio</h1>
                         <div class="brand-sub">
                             <span class="live-dot"></span>
-                            <span>Live Cloud Sync &bull; 13 Nov 2026, 04:21 PM IST</span>
+                            <span>Live Cloud Sync &bull; 13 Nov 2026, 04:48 PM IST</span>
                         </div>
                     </div>
                 </div>
@@ -967,8 +1044,38 @@
                 <div class="action-tags-row">
                     <span class="action-tag-pill">🎨 Style: <strong>tall-tale</strong></span>
                     <span class="action-tag-pill">🧬 Archetype: <strong>corporate-rivalry</strong></span>
-                    <span class="action-tag-pill">⏰ Optimal Release: <strong>09:45 AM IST</strong></span>
+                    <span class="action-tag-pill">⏰ Optimal Release: <strong>05:00 PM IST</strong></span>
                     <span class="action-tag-pill">🔒 Privacy: <strong>public</strong></span>
+                </div>
+            </div>
+
+            <!-- YouTube Algorithm Record-Breaker Targets Card -->
+            <div class="brain-record-box">
+                <div class="record-badge">🏆 YOUTUBE ALGORITHM RECORD-BREAKER TARGETS (EXCEED ALL-TIME BEST)</div>
+                <div class="record-grid">
+                    <div class="record-col">
+                        <span class="record-label">PREVIOUS CHANNEL RECORD</span>
+                        <span class="record-val">2,613 Views &bull; 41 Likes</span>
+                        <span class="record-sub">Domino's Used Car Trade (#1 Hit)</span>
+                    </div>
+                    <div class="record-col highlight">
+                        <span class="record-label">TARGET FOR UPCOMING RELEASE</span>
+                        <span class="record-val green-text">> 3,004 views (+15.0% vs record)</span>
+                        <span class="record-sub">> 49 likes (+19.5% vs record)</span>
+                    </div>
+                    <div class="record-col">
+                        <span class="record-label">ALGORITHM SEED TIMING</span>
+                        <span class="record-val">05:00 PM IST</span>
+                        <span class="record-sub">CONSISTENT COMPOUNDING</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zero-Negative Growth Shields Card -->
+            <div class="brain-shields-card">
+                <div class="brain-sec-label">🛡️ ZERO-NEGATIVE GROWTH SHIELDS (ALGORITHM SAFEGUARDS)</div>
+                <div class="shields-grid">
+                    <div class="shield-item">Shield 1 (Anti-Dud Blacklist): Permanently ban generic survival tips and isolated medical trivia (caused past 4-6 view dips).</div><div class="shield-item">Shield 2 (Seed Window Protection): Never release two videos within 6 hours of each other to avoid cannibalizing algorithmic test traffic.</div><div class="shield-item">Shield 3 (Prime Active Alignment): Release at 05:00 PM IST so indexing finishes right as mobile peak traffic surges (05:30 - 08:30 PM IST).</div><div class="shield-item">Shield 4 (Mandatory 0-2s Contrast Hook): Every Short must present extreme numerical contrast in seconds 0-2 to keep Viewed vs Swiped rate above 75%.</div>
                 </div>
             </div>
 
@@ -979,42 +1086,42 @@
                     
             <div class="decision-card">
                 <div class="decision-head">
-                    <span class="decision-id">DEC-20261113-003</span>
+                    <span class="decision-id">DEC-20261113-006</span>
                     <span class="decision-prio">HIGH</span>
                 </div>
                 <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
                 <div class="decision-meta">
-                    <div>💡 <strong>Reason:</strong> Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
-                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (1,907 views, 46 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
-                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds.</div>
+                    <div>💡 <strong>Reason:</strong> YouTube Algorithm Reach & Record-Breaker Protocol: Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate peak organic reach (e.g. Domino's pizza trade at 2,613 views / 41 likes). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook to maximize Viewed vs Swiped rate (>75%).</div>
+                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (2,613 views, 41 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> 🏆 OUTPERFORM CHANNEL RECORD: Exceed previous #1 hit (2,613 views & 41 likes) with > 3,004 views and > 49 likes within 72 hours of public indexing; sustain > 75% Viewed vs Swiped rate (VvSA) and > 90% APV retention with ZERO negative dips in channel analytics.</div>
                     <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
                 </div>
             </div>
             
             <div class="decision-card">
                 <div class="decision-head">
-                    <span class="decision-id">DEC-20261113-002</span>
+                    <span class="decision-id">DEC-20261113-005</span>
                     <span class="decision-prio">HIGH</span>
                 </div>
                 <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
                 <div class="decision-meta">
-                    <div>💡 <strong>Reason:</strong> Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
-                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (1,907 views, 46 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
-                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds.</div>
+                    <div>💡 <strong>Reason:</strong> YouTube Algorithm Reach & Record-Breaker Protocol: Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate peak organic reach (e.g. Domino's pizza trade at 2,613 views / 41 likes). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook to maximize Viewed vs Swiped rate (>75%).</div>
+                    <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (2,613 views, 41 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> 🏆 OUTPERFORM CHANNEL RECORD: Exceed previous #1 hit (2,613 views & 41 likes) with > 3,004 views and > 49 likes within 72 hours of public indexing; sustain > 75% Viewed vs Swiped rate (VvSA) and > 90% APV retention with ZERO negative dips in channel analytics.</div>
                     <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
                 </div>
             </div>
             
             <div class="decision-card">
                 <div class="decision-head">
-                    <span class="decision-id">DEC-20261113-001</span>
+                    <span class="decision-id">DEC-20261113-004</span>
                     <span class="decision-prio">HIGH</span>
                 </div>
                 <div class="decision-body">📌 Produce 'Blockbuster Laughed Netflix Out of the Room' (tall-tale)</div>
                 <div class="decision-meta">
-                    <div>💡 <strong>Reason:</strong> Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
+                    <div>💡 <strong>Reason:</strong> Zero-Negative Growth Protocol: Channel analytics confirm Asymmetric Trades & Corporate Rivalries generate 1,000–2,000+ views (e.g. Domino's pizza trade at 1,907 views). 'Blockbuster Laughed Netflix Out of the Room' carries the highest viral affinity score (15.71 pts) and delivers an immediate 0-2s contrast hook.</div>
                     <div>📊 <strong>Evidence:</strong> Past hits in this archetype: Domino's Used Car (1,907 views, 46 likes), $2 Mistake (1,373 views, 35 likes), $1 Bank Purchase (511 views, 21 likes). Matched high-converting keywords: ['bank', 'dollar', 'bought', 'billion', 'million'].</div>
-                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds.</div>
+                    <div>🎯 <strong>Expected Outcome:</strong> Reach > 1,200 views and > 30 likes within 48 hours of public indexing; maintain > 65% audience retention past the first 10 seconds with 0 analytics dips.</div>
                     <div>⚙️ <strong>Execution Target:</strong> <code>daily_shorts.yml (workflow_dispatch: topic='Blockbuster Laughed Netflix Out of the Room', privacy='public')</code> &bull; <span class="status-pill badge-green">DISPATCHED</span></div>
                 </div>
             </div>
@@ -1102,7 +1209,7 @@
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the million dollar pixel page #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLD9VwOnbYTtDbT2CXHdMoodQMIttg" alt="The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/FaMv9q-lnhI/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CLTi29cG&rs=AOn4CLDHpVWxPYUHzDS0Cl9Wv55d1lV80Q" alt="The Million Dollar Pixel Page #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/FaMv9q-lnhI/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -1110,7 +1217,7 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLD9VwOnbYTtDbT2CXHdMoodQMIttg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/FaMv9q-lnhI/maxresdefault.jpg?sqp=CLTi29cG&rs=AOn4CLDHpVWxPYUHzDS0Cl9Wv55d1lV80Q" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -1172,7 +1279,7 @@ Subscribe for daily viral business stories and life-changing facts! 🔔
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the man who sold the eiffel tower #shorts #businessstory #millionairemindset">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCn55DOdtwjh6HtcD0_ydzGLkh9VQ" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CLTi29cG&rs=AOn4CLAhqv98GdiqxOqzzDHifOJBiuCTkA" alt="The Man Who Sold the Eiffel Tower #Shorts #BusinessStory #MillionaireMindset" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_QsVgp0FNOA/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -1180,7 +1287,7 @@ Subscribe for daily viral business stories and life-changing facts! 🔔
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCn55DOdtwjh6HtcD0_ydzGLkh9VQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/_QsVgp0FNOA/maxresdefault.jpg?sqp=CLTi29cG&rs=AOn4CLAhqv98GdiqxOqzzDHifOJBiuCTkA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
@@ -1244,7 +1351,7 @@ Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable f
         <article class="video-card card-scheduled" data-filter="scheduled" data-title="the mystery of the green children #shorts #darkmystery #unexplained">
             <div class="card-left">
                 <div class="thumb-container">
-                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCMDJE_KAufWfNU8d_O4Rx00R7tKQ" alt="The Mystery of the Green Children #Shorts #DarkMystery #Unexplained" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
+                    <img src="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CLTi29cG&rs=AOn4CLBt2Hm_cvO81B37kuKGDIE152TVqA" alt="The Mystery of the Green Children #Shorts #DarkMystery #Unexplained" class="thumb-img" loading="lazy" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/H8vrUx2nyUc/hqdefault.jpg';">
                     <div class="thumb-badge badge-amber">SCHEDULED</div>
                 </div>
                 <div class="card-actions">
@@ -1252,7 +1359,7 @@ Don't forget to LIKE and SUBSCRIBE for more daily viral stories & unbelievable f
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                         Watch on YouTube
                     </a>
-                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CNjW29cG&rs=AOn4CLCMDJE_KAufWfNU8d_O4Rx00R7tKQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
+                    <a href="https://i9.ytimg.com/vi/H8vrUx2nyUc/maxresdefault.jpg?sqp=CLTi29cG&rs=AOn4CLBt2Hm_cvO81B37kuKGDIE152TVqA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>View Cover</a>
                 </div>
             </div>
 
